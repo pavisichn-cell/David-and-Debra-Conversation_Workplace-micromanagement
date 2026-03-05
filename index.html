@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub - pavisichn-cell/David-and-Debra-Conversation_Workplace-micromanagement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+        .github-border { border: 1px solid #30363d; }
+        .bg-github-dark { background-color: #0d1117; }
+        .bg-github-header { background-color: #161b22; }
+        .bg-github-secondary { background-color: #21262d; }
+        .text-github-link { color: #58a6ff; }
+        .text-github-muted { color: #8b949e; }
+        .btn-github {
+            background-color: #238636;
+            color: #ffffff;
+            transition: background-color 0.2s;
+        }
+        .btn-github:hover { background-color: #2ea043; }
+        
+        /* Custom Audio Player Styling */
+        audio {
+            filter: invert(100%) hue-rotate(180deg) brightness(1.5);
+            width: 100%;
+            height: 40px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="bg-github-header border-b border-[#30363d] py-4 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <svg height="32" viewBox="0 0 16 16" width="32" class="fill-current text-white">
+                    <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                </svg>
+                <div class="flex items-center space-x-1 font-semibold">
+                    <span class="text-github-link hover:underline cursor-pointer">pavisichn-cell</span>
+                    <span class="text-github-muted">/</span>
+                    <span class="text-github-link hover:underline cursor-pointer leading-tight">David-and-Debra-Conversation_Workplace-micromanagement</span>
+                </div>
+                <span class="ml-2 px-2 py-0.5 border border-[#30363d] rounded-full text-xs text-github-muted font-medium uppercase shrink-0">Public</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-3">
+                <div class="bg-github-secondary rounded-md px-3 py-1 text-sm border border-[#30363d]">Type <span class="bg-[#30363d] px-1 rounded">/</span> to search</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 md:px-8 py-8">
+        <!-- Tabs -->
+        <div class="flex space-x-4 border-b border-[#30363d] mb-6 overflow-x-auto pb-1">
+            <div class="flex items-center space-x-2 border-b-2 border-[#f78166] px-3 py-2 text-white">
+                <svg class="w-4 h-4 text-github-muted" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4.75C0 3.784.784 3 1.75 3h12.5c.966 0 1.75.784 1.75 1.75v6.5A1.75 1.75 0 0 1 14.25 13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-6.5a.25.25 0 0 0-.25-.25Z"></path></svg>
+                <span class="font-semibold text-sm">Code</span>
+            </div>
+            <div class="flex items-center space-x-2 px-3 py-2 text-github-muted hover:text-white cursor-pointer">
+                <span class="text-sm">Issues</span>
+                <span class="bg-github-secondary px-1.5 rounded-full text-xs">0</span>
+            </div>
+            <div class="flex items-center space-x-2 px-3 py-2 text-github-muted hover:text-white cursor-pointer">
+                <span class="text-sm">Pull requests</span>
+                <span class="bg-github-secondary px-1.5 rounded-full text-xs">0</span>
+            </div>
+            <div class="flex items-center space-x-2 px-3 py-2 text-github-muted hover:text-white cursor-pointer">
+                <span class="text-sm">Actions</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <!-- File Explorer & Content -->
+            <div class="lg:col-span-3">
+                
+                <!-- Breadcrumb -->
+                <div class="flex items-center space-x-2 mb-4 text-sm">
+                    <span class="text-github-link font-semibold">main</span>
+                    <span class="text-github-muted">/</span>
+                    <span>David and Debra Communication.mp3</span>
+                </div>
+
+                <!-- Media Player Container -->
+                <div class="github-border rounded-lg overflow-hidden bg-github-dark mb-6">
+                    <div class="bg-github-header px-4 py-3 flex items-center justify-between border-b border-[#30363d]">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-4 h-4 text-github-muted" fill="currentColor" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path></svg>
+                            <span class="text-sm font-mono">David and Debra Communication.mp3</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                             <span class="text-xs text-github-muted">300 KB</span>
+                             <button class="bg-github-secondary border border-[#30363d] px-2 py-1 rounded text-xs hover:bg-[#30363d]">History</button>
+                             <button class="bg-github-secondary border border-[#30363d] px-2 py-1 rounded text-xs hover:bg-[#30363d]">Raw</button>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 md:p-16 flex flex-col items-center justify-center space-y-8 bg-[#010409]">
+                        <!-- Waveform Simulation -->
+                        <div class="flex items-center justify-center space-x-1 w-full max-w-lg h-32">
+                            <div class="w-1.5 bg-github-link opacity-20 h-8 rounded-full"></div>
+                            <div class="w-1.5 bg-github-link opacity-40 h-16 rounded-full"></div>
+                            <div class="w-1.5 bg-github-link opacity-60 h-24 rounded-full"></div>
+                            <div class="w-1.5 bg-github-link opacity-80 h-32 rounded-full"></div>
+                            <div class="w-1.5 bg-github-link h-20 rounded-full animate-pulse"></div>
+                            <div class="w-1.5 bg-github-link opacity-80 h-28 rounded-full"></div>
+                            <div class="w-1.5 bg-github-link opacity-60 h-12 rounded-full"></div>
+                            <div class="w-1.5 bg-github-link opacity-40 h-20 rounded-full"></div>
+                            <div class="w-1.5 bg-github-link opacity-20 h-8 rounded-full"></div>
+                        </div>
+                        
+                        <!-- Audio Player -->
+                        <div class="w-full max-w-md bg-github-secondary p-4 rounded-xl shadow-2xl border border-[#30363d]">
+                            <audio controls class="w-full">
+                                <source src="David and Debra Communication.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div class="flex justify-between mt-2 px-1">
+                                <span class="text-[10px] text-github-muted uppercase font-bold tracking-widest">Internal Recording</span>
+                                <span class="text-[10px] text-github-muted uppercase font-bold tracking-widest">HQ Audio</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-sm text-github-muted italic text-center max-w-sm">
+                            Landing page for the "Workplace Micromanagement" evidence archive.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Case File Section (Replaces README) -->
+                <div class="github-border rounded-lg bg-github-dark p-6">
+                    <div class="flex items-center justify-between border-b border-[#30363d] pb-3 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-github-muted" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Z"></path></svg>
+                            <h2 class="font-semibold text-lg">Case_Notes.md</h2>
+                        </div>
+                        <span class="text-xs text-github-muted font-mono">Last updated 2 mins ago</span>
+                    </div>
+                    <div class="prose prose-invert max-w-none">
+                        <h1 class="text-2xl font-bold mb-4 border-b border-[#30363d] pb-2 text-white">Incident Report: Q3 Revision Dispute</h1>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-github-header p-3 rounded-md border border-[#30363d]">
+                                <span class="text-xs text-github-muted block uppercase font-bold mb-1">Employee A</span>
+                                <span class="text-white font-semibold">David (Managerial)</span>
+                            </div>
+                            <div class="bg-github-header p-3 rounded-md border border-[#30363d]">
+                                <span class="text-xs text-github-muted block uppercase font-bold mb-1">Employee B</span>
+                                <span class="text-white font-semibold">Debra (Lead Analyst)</span>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-semibold mt-6 mb-2 text-white">Summary of Dispute</h3>
+                        <p class="text-github-muted leading-relaxed mb-4">
+                            Employee B (Debra) alleges professional undermining following unilateral changes made to a core project deliverable (Q3 Deck). 
+                            Employee A (David) cites "executive storytelling" and "sudden anxiety" as justification for bypassing the lead analyst's workflow.
+                        </p>
+                        
+                        <h3 class="text-lg font-semibold mt-6 mb-2 text-white">Transcript Highlights</h3>
+                        <ul class="list-disc ml-6 space-y-3 text-sm text-github-muted">
+                            <li><strong>"I did what needed to be done to save the project."</strong> — David's defense of midnight revisions.</li>
+                            <li><strong>"You've basically told me I'm a glorified secretary."</strong> — Debra's response to the loss of creative agency.</li>
+                            <li><strong>"I don't have the luxury of mentoring when my reputation is on the line."</strong> — David's rejection of mentoring duties in high-stakes environments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="space-y-6">
+                <div class="border-b border-[#30363d] pb-6">
+                    <h3 class="text-sm font-semibold mb-2">About</h3>
+                    <p class="text-sm text-github-muted leading-relaxed">Evidence archive for the workplace communication dispute at pavisichn-cell's internal project.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-[#1f6feb26] text-github-link px-2 py-0.5 rounded-full text-xs font-medium border border-[#1f6feb26]">evidence</span>
+                        <span class="bg-[#1f6feb26] text-github-link px-2 py-0.5 rounded-full text-xs font-medium border border-[#1f6feb26]">management</span>
+                        <span class="bg-[#1f6feb26] text-github-link px-2 py-0.5 rounded-full text-xs font-medium border border-[#1f6feb26]">hr-archive</span>
+                    </div>
+                </div>
+                
+                <div class="border-b border-[#30363d] pb-6">
+                    <h3 class="text-sm font-semibold mb-2">Deployments</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-green-500">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm3.78-9.72a.75.75 0 0 0-1.06-1.06L6.75 9.19 5.28 7.72a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.06 0l4.5-4.5Z"></path></svg>
+                        </span>
+                        <span class="text-sm font-semibold">github-pages</span>
+                        <span class="text-xs text-github-muted">Active</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold mb-2">Contributors</h3>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-[#30363d] border border-[#30363d] flex items-center justify-center text-xs font-bold text-github-link">P</div>
+                        <div class="text-sm">
+                            <div class="font-semibold leading-none">pavisichn-cell</div>
+                            <div class="text-xs text-github-muted">Main Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-8 py-10 border-t border-[#30363d] mt-12 flex flex-wrap items-center justify-between text-xs text-github-muted gap-4">
+        <div class="flex items-center space-x-4">
+            <svg height="24" viewBox="0 0 16 16" width="24" class="fill-current opacity-50">
+                <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+            </svg>
+            <span>© 2024 pavisichn-cell. Personal Archive.</span>
+        </div>
+        <nav class="flex space-x-4">
+            <a href="#" class="text-github-link hover:underline">Blog</a>
+            <a href="#" class="text-github-link hover:underline">About</a>
+            <a href="#" class="text-github-link hover:underline">GitHub</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
